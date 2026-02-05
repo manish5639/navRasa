@@ -40,7 +40,7 @@ const Footer = () => {
       icon: Calendar, title: "Book a consultation", action: () => setOpenModal(true),
     },
     {
-      icon: Send, title: "Contact us via whatsapp", link: "https://wa.me/918696256355?text=Hi%20I%20am%20interested", target: "_blank"
+      icon: Send, title: "Contact us via whatsapp", link: "https://wa.me/916377067867?text=Hi%20I%20am%20interested", target: "_blank"
     },
     { icon: Phone, title: "Have a chat over the phone", link: "tel:+91 6377067867" },
     { icon: Mail, title: "Shoot me an email", link: "mailto:info@navrasaitsolutions.com" },
