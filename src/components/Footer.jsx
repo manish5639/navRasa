@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import Favicon from "../assets/favicon.ico";
+import Favicon from "../assets/navrasa_logo.png";
 import gsap from "gsap";
 import { useState } from "react";
 import ConsultationModal from "./ConsultationModal";
