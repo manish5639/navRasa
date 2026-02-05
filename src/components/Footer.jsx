@@ -37,7 +37,7 @@ const Footer = () => {
 
   const items = [
     {
-      icon: Calendar, title: "Book a consultation", action: () => setOpenModal(true),
+      icon: Calendar, title: "Send us your query", action: () => setOpenModal(true),
     },
     {
       icon: Send, title: "Contact us via whatsapp", link: "https://wa.me/916377067867?text=Hi%20I%20am%20interested", target: "_blank"
@@ -52,6 +52,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2">
           {/* LEFT */}
           <div className="flex flex-col justify-between py-16 sm:py-20 lg:py-24 px-6 sm:px-10 lg:px-11 border border-black">
+            {/* TOP */}
             <div className="pl-0 sm:pl-8 lg:pl-16">
               <a href="/" className="inline-block mb-10 sm:mb-16">
                 <img src={Favicon} alt="Logo" className="w-16 sm:w-20 h-auto" />
@@ -66,12 +67,48 @@ const Footer = () => {
               </h2>
             </div>
 
-            <nav className="mt-16 sm:mt-24 lg:mt-52 flex flex-col gap-4 sm:gap-6 text-base sm:text-lg pl-0 sm:pl-8 lg:pl-16">
-              <a href="/" className="font-semibold">Home</a>
-              <a href="/contact">Contact</a>
-              <a href="/work">My Work</a>
-            </nav>
+            {/* CONTACT INFO */}
+            <div className="mt-14 sm:mt-20 pl-0 sm:pl-8 lg:pl-16">
+              <h4 className="text-sm uppercase tracking-widest text-black/60 mb-4">
+                Contact Illustration
+              </h4>
+
+              <div className="space-y-3 text-sm sm:text-base text-black/80">
+                <p className="leading-relaxed">
+                  Shyam Nagar, Jaipur,<br />
+                  Rajasthan
+                </p>
+
+                <a
+                  href="tel:+916377067867"
+                  className="block hover:text-purple-600 transition"
+                >
+                  +91 63770 67867
+                </a>
+
+                <a
+                  href="mailto:info@navrasaitsolutions.com"
+                  className="block hover:text-purple-600 transition"
+                >
+                  info@navrasaitsolutions.com
+                </a>
+              </div>
+            </div>
+
+            {/* NAV */}
+            {/* <nav className="mt-16 sm:mt-24 lg:mt-40 flex flex-col gap-4 sm:gap-6 text-base sm:text-lg pl-0 sm:pl-8 lg:pl-16">
+              <a href="/" className="font-semibold hover:text-purple-600 transition">
+                Home
+              </a>
+              <a href="/contact" className="hover:text-purple-600 transition">
+                Contact
+              </a>
+              <a href="/work" className="hover:text-purple-600 transition">
+                My Work
+              </a>
+            </nav> */}
           </div>
+
 
           {/* RIGHT */}
           <div className="grid grid-cols-1 sm:grid-cols-2 border border-black/50">

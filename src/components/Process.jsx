@@ -7,27 +7,33 @@ gsap.registerPlugin(ScrollTrigger);
 const steps = [
   {
     num: "01",
-    title: "Strategy",
+    title: "Idea Validation",
     text:
-      "It all begins with a chat. Where we discuss your needs and goals. Once identified, I form a strategy to ensure these goals are met. This ensures we are on the same page, and allows for a clear scope and project cost.",
+      "Market research and feasibility analysis to ensure your concept has strong market potential.",
   },
   {
     num: "02",
-    title: "Design",
+    title: "Prototype",
     text:
-      "Designing begins with the aforementioned goals in mind. Whether it's to maximise conversions, create an online store, or to complement your brand's unique identity – you are kept in the loop the entire way to ensure you get the website of your dreams.",
+      "Interactive mockups and user journey mapping to visualize the final product experience.",
   },
   {
     num: "03",
-    title: "Development",
+    title: "MVP Development",
     text:
-      "Next is to breathe life into the designs of your new website using modern development tools focused on performance, SEO, and scalability.",
+      "Building core features with clean, scalable code that can evolve with your business needs.",
   },
   {
     num: "04",
-    title: "Client Training",
+    title: "Iterations",
     text:
-      "Time is money. Luckily, you don't need any prior website experience to maintain and update your website, so you can focus on the work you love knowing your online presence is in great hands.",
+      "User feedback integration and feature refinements based on real market data and usage patterns.",
+  },
+  {
+    num: "05",
+    title: "Scaling",
+    text:
+      "Infrastructure optimization and feature expansion to support rapid user growth and business scaling.",
   },
 ];
 

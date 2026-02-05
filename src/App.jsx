@@ -8,7 +8,7 @@ function App() {
   return (
     <AuthProvider>
       {/* <Navbar /> */}
-      {/* <SmoothScroll /> */}
+      <SmoothScroll />
       <Home />
       <Router>
         <Routes>

@@ -8,24 +8,25 @@ gsap.registerPlugin(ScrollTrigger);
 const SmoothScroll = () => {
   useEffect(() => {
     const lenis = new Lenis({
-      lerp: 0.12,        
+      duration: 1.1,           // natural momentum
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
       smoothWheel: true,
-      smoothTouch: true,
-      syncTouch: true,   
+      smoothTouch: false,      // ❌ disable lag on touch
+      wheelMultiplier: 1,      // 1 = direct feel
+      touchMultiplier: 1.2,    // slightly faster touch
     });
 
-    gsap.ticker.add((time) => {
-      lenis.raf(time * 1000);
-    });
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
 
-    gsap.ticker.lagSmoothing(0);
+    requestAnimationFrame(raf);
 
     lenis.on("scroll", ScrollTrigger.update);
-
     ScrollTrigger.refresh();
 
     return () => {
-      gsap.ticker.remove(lenis.raf);
       lenis.destroy();
     };
   }, []);
